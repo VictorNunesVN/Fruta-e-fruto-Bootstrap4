@@ -1,3 +1,5 @@
+
+/*CARROSSEL*/
 .imagem-carrossel-um{
     /*object-fit >> como que o objeto se comporta em relação ao container 
     o COVER adapta a imagem ao container sem distorce-lo.*/
@@ -12,4 +14,13 @@
     o COVER adapta a imagem ao container sem distorce-lo.*/
     object-fit: cover ;
     height: 400px
+}
+
+.carousel-caption{
+    height: 60%;
+}
+
+.fonte-titulo{
+    font-family: 'Pacifico', cursive;
+    font-size: 50px;
 }
