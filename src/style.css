@@ -27,3 +27,17 @@
 .cor-especial{
     color:darkred
 }
+
+.botao-cor-especial{
+    background-color: darkred;
+    color: aliceblue;
+    border-color: darkred;
+}
+
+.botao-cor-especial:hover{
+    background-color: rgb(97, 4, 4);
+    color: aliceblue;
+}
+.borda_card{
+    border-color:darkred;
+}
