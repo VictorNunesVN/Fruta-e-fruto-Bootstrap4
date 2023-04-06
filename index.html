@@ -10,9 +10,36 @@
 </head>
 
 <body>
+  <!--
+  obs:
+  Atributos com ARIA servem para leitores de tela.
+  TABINDEX serve para usar o tab para ir pulando de link em link.-->
+  <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+  <a class="navbar-brand" href="#">Fruta & Fruto</a>
+  <!--Menu hamburgue-->
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+    <ul class="navbar-nav">
+      <li class="nav-item active">
+        <a class="nav-link" href="#">início <span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">receitas</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">quem somos</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">contatos</a>
+      </li>
+    </ul>
+  </div>
+</nav>
   <title>fruto & fruta</title>
 
-  <h1>Reaproveite melhor os alimentos!</h1>
+  <h1 class="titulo">Reaproveite melhor os alimentos!</h1>
   <h1>Economize e ganhe em saúde!</h1>
 
   <h2>Receitas para economizar e ganhar saúde</h2>
@@ -43,7 +70,7 @@
   <p>Receita refrescante e cheia de vitaminas para o seu café da manhã!
   </p>
 
-  <p>contato:<a href="mailto:email@frutafruto.com.br">email@frutafruto.com.br</a></p>
+  <p>contato:<a href="mailto:email@frutafruto.com.br" tabindex="-1">email@frutafruto.com.br</a></p>
 
   <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct" crossorigin="anonymous"></script>
