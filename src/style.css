@@ -1,0 +1,15 @@
+.imagem-carrossel-um{
+    /*object-fit >> como que o objeto se comporta em relação ao container 
+    o COVER adapta a imagem ao container sem distorce-lo.*/
+    object-fit: cover ;
+    /*object-position >> movimenta a imagem no eixo X e Y object-position: x% y%;*/
+    object-position: 0 70%;
+    height: 400px
+}
+
+.imagem-carrossel-dois{
+    /*object-fit >> como que o objeto se comporta em relação ao container 
+    o COVER adapta a imagem ao container sem distorce-lo.*/
+    object-fit: cover ;
+    height: 400px
+}
