@@ -1,5 +1,5 @@
 .card-largura{
-    width: 18rem;
+    max-width: 18rem;
 }
 
 /*CARROSSEL*/
@@ -57,3 +57,12 @@
     object-position: 0 75%;
 }
 
+/* opção de #receitas com flexbox
+#receitas{
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 100px;
+    row-gap: 50px;
+    justify-content: space-around
+}
+*/
