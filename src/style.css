@@ -1,3 +1,6 @@
+.card-largura{
+    width: 18rem;
+}
 
 /*CARROSSEL*/
 .imagem-carrossel-um{
@@ -41,3 +44,16 @@
 .borda_card{
     border-color:darkred;
 }
+
+/*CARDS*/
+.card-posicao-img{
+    object-fit: cover;
+    height: 200px;
+}
+
+.card-posicao-img2{
+    object-fit: cover;
+    height: 200px;
+    object-position: 0 75%;
+}
+
