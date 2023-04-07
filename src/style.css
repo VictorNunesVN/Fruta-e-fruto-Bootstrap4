@@ -28,7 +28,8 @@
 }
 
 .cor-especial{
-    color:darkred
+    /*o !important faz com que essa fonte passe por cima dos outros estilos em cascata. */
+    color: darkred !important;
 }
 
 .botao-cor-especial{

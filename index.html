@@ -20,8 +20,8 @@
   Atributos com ARIA servem para leitores de tela.
   TABINDEX serve para usar o tab para ir pulando de link em link.-->
   <header>
-    <nav class="navbar navbar-expand-lg navbar-light bg-light ">
-      <a class="navbar-brand" href="#">Fruta & Fruto</a>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+      <a class="navbar-brand fonte-titulo cor-especial" href="#">Fruta & Fruto</a>
       <!--Menu hamburgue-->
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
@@ -38,7 +38,7 @@
             <a class="nav-link" href="#">quem somos</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">contatos</a>
+            <a class="nav-link "data-toggle="modal" data-target="#modal-contato" href="#">contatos</a>
           </li>
         </ul>
       </div>
@@ -149,6 +149,48 @@
     </div>
   </section>
 </main>
+
+<!--O modal fica na parte de fora do main. Quandio acionado, uma janela surge e nada atrás funciona enquanto o modal estiver ativo.-->
+
+<!-- Button trigger modal -->
+<!--botão apagado pois não o acionamento do modal foi para o menu principal em contatos-->
+
+<!-- Modal -->
+<div class="modal fade" id="modal-contato" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Contato</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+
+      <div class="modal-body">
+        <form>
+          <div class="form-group">
+            <label for="formGroupExampleInput">Nome completo</label>
+            <input type="text" class="form-control" id="formGroupExampleInput" placeholder="Seu nome">
+          </div>
+
+          <div class="form-group">
+            <label for="exampleFormControlInput1">E-mail para contato</label>
+            <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="nome@examplo.com">
+          </div>
+          
+          <div class="form-group">
+            <label for="exampleFormControlTextarea1">Mensagem</label>
+            <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" placeholder="Mensagem"></textarea>
+          </div>
+        </form>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
+        <button type="button" class="btn btn-primary">Enviar</button>
+      </div>
+    </div>
+  </div>
+</div>
 
   <p>contato:<a href="mailto:email@frutafruto.com.br" tabindex="-1">email@frutafruto.com.br</a></p>
 
